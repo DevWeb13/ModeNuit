@@ -69,3 +69,24 @@ main{
     color: #333;
 }
 
+/*DARK MODE*/
+
+.dark{
+    background: #333;
+}
+
+.dark main{
+    background: #09FBBA;
+}
+
+.dark .label{
+    box-shadow: 2px 1px 1px #09FBBA;
+    background: #888;
+}
+
+.dark .ball{
+    background: #09FBBA;
+}
+
+
+
