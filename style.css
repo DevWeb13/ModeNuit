@@ -48,3 +48,20 @@ main{
     box-shadow: 2px 1px 1px #333;
 }
 
+.label .ball{
+    background: #eee;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    transform: translateX(0px); /*Initialise le déplacement de la boule sur l'axe X.*/
+    transition: transform 0.4s/*Le déplacement de la boule durera 0.4s*/ cubic-bezier(.45, -1.12, .35, 1.78);/*Sert a déformer la courbe de transition(voir site cubic-bezier.com).*/
+
+}
+
+.checkbox:checked + .label .ball{/*Quand .checkbox est checked alors on agit sur la boule*/
+    transform: translateX(29px);
+}
+
